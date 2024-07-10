@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Camera App</h1>
+    <div id="controls">
+      <button id="startButton" class="btn">Start Camera</button>
+      <button id="stopButton" class="btn">Stop Camera</button>
+      <button id="toggleLandmarksButton" class="btn">Toggle Landmarks</button>
+      <button id="toggleAnglesButton" class="btn">Toggle Angles</button>
+    </div>
+    
+    <div id="videoContainer">
+      <video id="videoElement" autoplay></video>
+      <canvas id="overlayCanvas"></canvas>
+    </div>
+  </div>
+  
+  <script src="renderer.js"></script>
+</body>
+</html>
